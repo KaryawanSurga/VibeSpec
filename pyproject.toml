@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vibespec"
+version = "0.1.0"
+description = "Deterministic, offline prompt-to-spec CLI for vibe coders"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "VibeSpec contributors" }]
+keywords = ["cli", "specification", "code-generation", "offline"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+
+[project.scripts]
+vibespec = "vibespec.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[project.urls]
+Homepage = "https://github.com/vibespec/vibespec"
+Issues = "https://github.com/vibespec/vibespec/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/vibespec"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/src", "/tests", "/examples", "/docs", "/README.md", "/LICENSE", "/CHANGELOG.md"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+

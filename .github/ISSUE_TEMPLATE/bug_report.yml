@@ -1,0 +1,58 @@
+name: Bug report
+description: Report reproducible incorrect or unsafe VibeSpec behavior.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting a problem. Remove secrets and private idea content before submitting.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Preflight
+      options:
+        - label: I searched existing issues for this problem.
+          required: true
+        - label: This report contains no credentials or confidential project information.
+          required: true
+  - type: input
+    id: version
+    attributes:
+      label: VibeSpec version
+      description: Output of `vibespec --version`.
+      placeholder: vibespec 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, Python version, and installation method.
+      placeholder: Windows 11, Python 3.12.5, pip install -e .
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Include a minimal, sanitized idea and exact commands.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Include exit status and sanitized diagnostic output.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Relevant paths, regressions, or bundle validation details.

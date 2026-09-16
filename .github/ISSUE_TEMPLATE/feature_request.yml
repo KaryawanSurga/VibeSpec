@@ -1,0 +1,47 @@
+name: Feature request
+description: Propose a focused improvement to VibeSpec.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Preflight
+      options:
+        - label: I searched existing issues and documentation.
+          required: true
+        - label: This proposal preserves an offline deterministic default workflow.
+          required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Who is affected and what cannot be accomplished today?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Describe observable behavior, not only an implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: rules
+    attributes:
+      label: Determinism and rule impact
+      description: Explain new inputs, outputs, defaults, precedence, and reproducibility impact.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Include simpler workarounds and accepted trade-offs.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Proposed scope boundaries
+      description: State what this proposal should explicitly not add.
