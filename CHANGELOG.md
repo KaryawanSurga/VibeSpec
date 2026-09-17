@@ -15,4 +15,4 @@ All notable changes to VibeSpec are documented here. This project follows [Seman
 - Automated tests and CI support for Python 3.11, 3.12, and 3.13.
 - Project governance, contribution, security, and release documentation.
 
-[0.1.0]: https://github.com/vibespec/vibespec/releases/tag/v0.1.0
+[0.1.0]: https://github.com/KaryawanSurga/VibeSpec/releases/tag/v0.1.0

@@ -27,8 +27,8 @@ vibespec = "vibespec.cli:main"
 dev = ["pytest>=8,<9"]
 
 [project.urls]
-Homepage = "https://github.com/vibespec/vibespec"
-Issues = "https://github.com/vibespec/vibespec/issues"
+Homepage = "https://github.com/KaryawanSurga/VibeSpec"
+Issues = "https://github.com/KaryawanSurga/VibeSpec/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/vibespec"]
