@@ -13,7 +13,7 @@ By participating, you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 VibeSpec supports Python 3.11 through 3.13.
 
 ```bash
-git clone https://github.com/vibespec/vibespec.git
+git clone https://github.com/KaryawanSurga/VibeSpec.git
 cd vibespec
 python -m venv .venv
 source .venv/bin/activate
