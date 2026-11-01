@@ -24,7 +24,7 @@ classifiers = [
 vibespec = "vibespec.cli:main"
 
 [project.optional-dependencies]
-dev = ["pytest>=8,<9"]
+dev = ["pytest>=8,<10"]
 
 [project.urls]
 Homepage = "https://github.com/KaryawanSurga/VibeSpec"
